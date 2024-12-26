@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.navbar__s1 {
+    display: flex;
+    font-weight: 600;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.title_logo {
+    height: 50px;
+}
+
+.navbar__s2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    
+
+    
+     
+}
+
+.navbar__s2 p:hover{
+     
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+    
+
+.navbar__s3 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.image__global {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    font-weight: 600;
+}
+
+.divider {
+    opacity: 0.5;
+
+}
+
+.navbar__s3__button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.navbar__s3__icons {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    gap: 3px;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.navbar__s3__currency {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar__s4 img{
+    width: 15px;
+    height: 15px;
+    display: none;
+    
+}
+.heading {
+    display: flex;
+    font-size: 55px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.options {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    align-items: center;
+}
+
+.options p:hover{
+    border-bottom: solid black 2px;
+}
+
+.options img {
+    width: 20px;
+    height: 20px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.searchbar__outline {
+    width: 70%;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: solid #E0E0E0 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+
+.searchbar img {
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 10px;
+    
+
+}
+
+.searchbar input {
+    width: 90%;
+    padding: 15px;
+    border: none;
+
+     
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+.searchbar button {
+    border-radius: 30px;
+    width: 13%;
+    background-color: rgb(105, 221, 184);
+    color: black;
+    border: none;
+    font-weight: bold;
+
+
+}
+
+.searchbar__searchbutton:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.ad__section img {
+    width: 90%;
+    height: 40%;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.ad__section {
+    position: relative;
+
+}
+
+.heading__2 {
+    position: absolute;
+    bottom: 20px;
+    left: 90px;
+    color: black;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes zoom {
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+.button {
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+
+.button__footer {
+    position: absolute;
+    top: 80px;
+}
+
+.inspired {
+    margin: 30px;
+    padding: 20px;
+}
+
+.inspired__title {
+    font-size: 30px;
+}
+
+.inspired__subtitle {
+    margin-top: 10px;
+    font-size: 15px;
+    color: grey;
+
+}
+
+.inspired__cards {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.inspired__content img {
+   flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.inspired__content img:hover {
+    opacity: 0.8;
+}
+
+.inspired__content {
+    flex-grow: 1;
+    flex-basis: 5%;
+    position: relative;
+    align-items: center;
+
+}
+
+.inspired__content p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+.inspired__content p:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.inspired__content h3:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.items {
+    color: grey;
+
+}
+
+.arrow__container {
+    position: absolute;
+    bottom: 65%;
+    margin-left: 97%;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+.arrow__container img {
+    width: 20px;
+    height: 20px;
+    font-weight: 600px;
+
+
+}
+
+.arrow__container:hover{
+    color: white;
+    background-color: black;
+}
+
+.explore {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    padding: 20px;
+    background-color: bisque;
+}
+
+.explore__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.explore__cards img {
+    width: 100%;
+    height: 75%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.explore__cards img:hover{
+    opacity: 0.5;
+}
+.explore__content {
+    width: 100%;
+    position: relative;
+   
+
+}
+
+
+
+.explore__content p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+
+
+}
+
+.explore__content p:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none
+}
+
+.heart img {
+
+
+    font-weight: bold;
+    width: 15px;
+    height: 15px;
+
+
+}
+
+
+.travel {
+    background-color: blanchedalmond;
+    margin-top: 40px;
+
+    padding: 20px;
+    display: flex;
+
+
+
+
+}
+
+
+
+
+.travel__1 {
+    width: 35%;
+    margin: 35px;
+    gap: 20px;
+
+}
+
+.travel h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+
+}
+
+.travel__p {
+    gap: 10px;
+    margin: 35px;
+    font-size: 25px;
+    width: 35%;
+    margin-left: 30px;
+}
+
+.travel__button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.travel__button:hover{
+    opacity: 0.5;
+}
+
+.footer__container{
+    background-color: azure;
+    margin-top: 50px;
+    
+}
+
+.footer__section1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 30px 0 30px;
+}
+
+
+.footer__column h4{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer__column p{
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footer__column p:hover{
+    text-decoration: underline;
+}
+
+.footer__column{
+    line-height: 1.7;
+    margin: 30px;
+    
+}
+
+.footer__row1{
+     
+    display: flex;
+    gap: 10px;
+    
+}
+
+.footer__img img{
+    width: 40px;
+}
+
+
+.footer__section2__text p{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.footer__section2__text ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    padding-left: 0px;
+    padding-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer__section2__text li:hover{
+    opacity: 0.5;
+}
+
+.footer__section2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+}
+
+select{
+background-color: white;
+width: 140px;
+
+padding: 7px 8px 7px 20px;
+border-radius: 10px;
+border: 2px solid #c9c9c9;
+cursor: pointer;
+font-weight: bold;
+}
+
+.footer__section3__p{
+    font-size: 12px;
+    font-weight: 300;
+    width: 65%;
+}
+
+.footer__section3{
+    margin: 0 50px 0 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+td:hover{
+    opacity: 0.5;
+
+
+}
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .inspired__content{
+        flex-basis: 40%;
+    }
+    
+    .navbar__s2{
+        display: none;
+
+    }
+
+    .navbar__s2, .navbar__s3{
+        display: none;
+    }
+
+    .navbar__s4{
+        display: block;
+    }
+
+
+}
+    
+
+        
+
+
